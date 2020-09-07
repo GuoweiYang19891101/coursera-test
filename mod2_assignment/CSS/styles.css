@@ -10,33 +10,41 @@ h1 {
 	margin-bottom: 50px;
 }
 
-div.row > div {
+div.row > div { /*outer box*/
 	/*margin-left: 15px;*/
 	/*margin-right: 15px;*/
-	background-color: gray;
+	/*background-color: gray;*/
+	border: none;
 }
 
-.col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
+/*.col-lg-4, .col-md-6, .col-md-12, .col-sm-12 {
 	position: relative;
-/*	margin-left: 15px;
-	margin-right: 15px;*/
+}*/
+
+.content { /*content box or inner conatiner box*/
+	margin: 0px 10px 15px 10px;
+	background-color: gray;
+	border: 1px solid black;
+	position:relative;
 }
 
 .name {
-	/*float: top right;*/
+	/*food name*/
 	position:absolute;
 	top: 0px;
 	right: 0px;
 	border: 1px solid black;
 	height: 30px;
 	width: 100px;
+	padding-top: 5px;
+	text-align: center;
 }
 
 .text {
-	/*position:absolute;*/
-	/*top: 30px;*/
-	margin-top:60px;
-
+	/*food description*/
+	margin-top:40px;
+	margin-left: 10px;
+	padding-bottom: 5px;
 }
 
 #chicken {
@@ -55,7 +63,6 @@ div.row > div {
 /*Responsive Framework*/
 .row {
 	width: 100%;
-	/*clear: both;*/
 }
 
 /*For desktop view*/
